@@ -11,7 +11,7 @@ Okay, but why choose BossbarLib?
 * Almost unobservable smoke particles.
 * The bossbar wouldn't disappear unless you request to do so.
 * Performant and no flickerings. Unlike some libraries, BossbarLib just wouldn't spawn a new entity every time a new message is displayed.
-* Clean, object-oriented code that a ten-year-old could understand.
+* Clean, object-oriented approach that a ten-year-old could understand.
 * Can be used as a standalone plugin, or be shaded into your project.
 
 Is BossbarLib perfect?
