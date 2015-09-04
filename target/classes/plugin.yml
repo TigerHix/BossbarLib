@@ -1,0 +1,5 @@
+name: BossbarLib
+version: 1.0.0
+description: Utilizing health bars for a UI enhancement.
+author: TigerHix
+main: me.tigerhix.lib.bossbar.BossbarLib
