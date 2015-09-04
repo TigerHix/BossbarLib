@@ -3,12 +3,12 @@ A simple, clean, performant and object-oriented bossbar library for latest Spigo
 
 Another bossbar library? Seriously?
 --------------
-Yes, there have been a lot of libraries utilizing the bossbar to display messages. However, none of them is perfect. BarAPI did work well in previous versions, but not anymore in the latest versions; and the replacements I have found would either display streams of annoying smoke particles from places to places, or random flickering and disappearances that happens a lot.
+Yes, there have been a lot of libraries utilizing the bossbar to display messages. However, none of them satisfies my need. BarAPI did well in pre-1.8, but not anymore in the latest versions; and the replacements I have found would either display streams of annoying smoke particles from places to places, or random flickering and disappearances that happens a lot.
 
 Okay, but why choose BossbarLib?
 --------------
 * It works.
-* Unseeable smoke particles.
+* Almost unobservable smoke particles.
 * The bossbar wouldn't disappear unless you request to do so.
 * Performant and no flickerings. Unlike some libraries, BossbarLib just wouldn't spawn a new entity every time a new message is displayed.
 * Clean, object-oriented code that a ten-year-old could understand.
@@ -16,8 +16,8 @@ Okay, but why choose BossbarLib?
 
 Is BossbarLib perfect?
 --------------
-Nnot yet. Here are some worth-mentioning problems:
-* Wither shields when the health is under 50%. This is completely client-side, and there are no ways to avoid it.
+Unfortunately, not quite. Here are some worth-mentioning problems:
+* Wither shields when the health is under 50%. This is completely client-side, and there are no ways to avoid it. There are some workarounds, though: you can make a custom resource pack with `entity/wither/wither.png`, `entity/wither/wither_armor.png`, ``entity/wither/invulnerable.png` set to a blank, transparent image, so that players wouldn't be able to see the goddamn wither even though it is rendered. The second workaround is easier: just never set the health of a bossbar under 50%. If you want to use the bossbar as a timer, make the message to indicate the time left instead. 
 * Version dependent (currently, it supports Spigot 1.8.8 only). Bad news, the default implementation of BossbarLib optimizes the wither entity by extending `EntityMonster`, a class in NMS package - which means you have to update BossbarLib every time when there is a Minecraft version update. The good news is, unless Mojang have developed new glitches for the bossbar again, making BossbarLib up-to-date usually wouldn't take so long.
 
 How do I add it to my project?
@@ -82,4 +82,4 @@ BossbarHelper.clear(Player);
 
 License
 --------------
-BossbarLib is licensed under the GNU Lesser General Public License (Version 3).
+BossbarLib is licensed under the [GNU Lesser General Public License (Version 3)](https://github.com/TigerHix/BossbarLib/blob/1.8/LICENSE).
