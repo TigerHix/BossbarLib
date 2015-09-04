@@ -1,5 +1,5 @@
 # BossbarLib
-A simple, clean, performant and object-oriented bossbar library for latest Spigot.
+A simple, clean and performant bossbar library.
 
 Another bossbar library? Seriously?
 --------------
