@@ -60,11 +60,13 @@ And of course, to clear the bossbar:
 BossbarLib.getHandler().clearBossbar(player);
 ```
 
-Do note that, `getBossbar(Player)` will instantiate a bossbar for that player if the player does not have one. For determining whether or not a player has a bossbar displayed, please use:
+Do note that, `getBossbar(Player)` will instantiate a bossbar for that player if the player does not have one. For determining whether or not a player has a bossbar displayed, use:
 
 ```java
 BossbarLib.getHandler().hasBossbar(player);
 ```
+
+instead.
 
 Get used of `BarAPI.setMessage(Player, String)`-alike methods?
 --------------
