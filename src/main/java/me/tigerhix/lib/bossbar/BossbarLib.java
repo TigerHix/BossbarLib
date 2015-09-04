@@ -15,7 +15,9 @@ public final class BossbarLib extends JavaPlugin {
     }
 
     public static void setPluginInstance(Plugin instance) {
+        if (BossbarLib.instance != null) return;
         BossbarLib.instance = instance;
+        setHandler(new WitherBossbarHandler());
     }
 
     public static BossbarHandler getHandler() {
@@ -28,8 +30,7 @@ public final class BossbarLib extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        instance = this;
-        handler = new WitherBossbarHandler();
+        setPluginInstance(this);
     }
 
 }
